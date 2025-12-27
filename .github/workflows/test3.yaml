@@ -1,0 +1,19 @@
+name: File Operation in Github
+
+on: push
+
+jobs:
+    files:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Create a file
+              run: echo "Hi good evening, this is dsganji here">devops.txt
+            
+            - name: Display the content of devops.txt
+              run: cat devops.txt
+
+            - name: Display date
+              run: date
+
+            - name: Diplay the total no of file
+              run: ls -lrtha
