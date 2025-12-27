@@ -1,0 +1,15 @@
+name: Testing Workflow      #name of the  workflow
+
+on: push    #When to execute this Testing Workflow
+
+jobs:
+    test-job:       #name of the job   
+        runs-on: ubuntu-latest  # where to run this test-job of test2.yaml  && this is github-hosted runner
+
+        steps:
+            - name: Hello display    #name of the step or task
+              run: echo "Welcome to Begnaluru"
+              
+            - name: Display the date
+              run: date
+
