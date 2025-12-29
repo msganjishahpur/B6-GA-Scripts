@@ -6,7 +6,7 @@ jobs:
     files:
         runs-on: ubuntu-latest
         steps:
-            - name: Create a file
+            - name: Create a file_2
               run: echo "Hi good morning, this is dsganji here">DevSecOps.txt
             
             - name: Display the content of DevSecOps.txt
