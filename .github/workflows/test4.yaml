@@ -1,0 +1,22 @@
+name: File Operation in Github
+
+on: workflow_dispatch
+
+jobs:
+    files:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Create a file
+              run: echo "Hi good morning, this is dsganji here">DevSecOps.txt
+            
+            - name: Display the content of DevSecOps.txt
+              run: cat DevSecOps.txt
+
+            - name: Display date
+              run: date
+
+            - name: Diplay file and directories
+              run: ls -lrtha
+
+            - name: Display present working location
+              run: pwd
