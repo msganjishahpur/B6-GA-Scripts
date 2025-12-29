@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Create a file
-              run: echo "Hi good evening, this is dsganji here">devops.txt
+              run: echo "Hi good morning, this is dsganji here">devops.txt
             
             - name: Display the content of devops.txt
               run: cat devops.txt
