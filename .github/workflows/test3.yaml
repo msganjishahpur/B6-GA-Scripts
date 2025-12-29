@@ -15,5 +15,8 @@ jobs:
             - name: Display date
               run: date
 
-            - name: Diplay the total no of file
+            - name: Diplay file and directories
               run: ls -lrtha
+
+            - name: Display present working location
+              run: pwd
